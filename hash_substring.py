@@ -10,8 +10,10 @@ def read_input():
     elif check_for_I == "F":
         try:
             with open('./tests/06', 'r') as f:
-                pattern = f.readLine().rstrip()
-                text = f.readLine().rstrip()
+                pattern = f.readLine()
+                pattern = pattern.rstrip()
+                text = f.readLine()
+                text = text.rstrip()
         except FileNotFoundError:
                 print("File not found!")
                 return
