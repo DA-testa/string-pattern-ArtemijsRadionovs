@@ -3,13 +3,11 @@
 def read_input():
     # this function needs to aquire input both from keyboard and file
     # as before, use capital i (input from keyboard) and capital f (input from file) to choose which input type will follow
-#     check_for_I = input().replace('\r','')
-    check_for_I = input()
+    check_for_I = input().replace('\r','')
     if check_for_I == "I":
         pattern = input().rstrip()
         text = input().rstrip()
     elif check_for_I == "F":
-#         file_name = input().replace('\r','')
         file_name = input()
         try:
             with open('./tests/' + file_name, 'r') as f:
